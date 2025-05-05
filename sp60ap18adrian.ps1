@@ -1,9 +1,9 @@
-Insertar la programa
+#Insertar la programa
 param(
     [string]$programa
 )
 
-Comprobar si se ha introducido un parámetro, verificamos si el programa existe, ejecutamos el programa y si nos se encuentra ponemos mensajes de error.
+#Comprobar si se ha introducido un parámetro, verificamos si el programa existe, ejecutamos el programa y si nos se encuentra ponemos mensajes de error.
 if ($programa) {
     if (Test-Path $programa) {
         Write-Host "Ejecutando el programa: $programa"
